@@ -6,7 +6,7 @@ from handlers import start, regular, basketball, luxury, order
 bot = Bot(token=token)
 dp = Dispatcher()
 
-# Регистрация обработчиков
+
 dp.include_router(start.router)
 dp.include_router(regular.router)
 dp.include_router(basketball.router)
@@ -19,3 +19,5 @@ async def main():
 
 if __name__ == "__main__":
     asyncio.run(main())
+
+
